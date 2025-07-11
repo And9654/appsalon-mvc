@@ -1,0 +1,24 @@
+{
+    "name": "ag875/app-salon_php_mvc_js_sass",
+    "description": "Proyecto en MVC, PHP 8, MySQL, SASS y Gulp",
+    "type": "project",
+    "license": "ISC",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andres9654",
+            "email": "ag8758191@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

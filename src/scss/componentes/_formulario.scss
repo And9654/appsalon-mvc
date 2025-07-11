@@ -1,0 +1,37 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.formulario{
+    margin-top: v.$separacion;
+    width: 100%;
+}
+
+.campo{
+
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+
+    label{
+        // Para qué tenga una separación de la derecha de 10rem
+        flex: 0 0 10rem;
+    }
+
+    input{
+        //para que tome todo el largo (distinto de cero)
+        flex: 1;
+        max-width: 75%;
+        padding: calc(v.$separacion / 4);
+        border-radius: 1rem;
+
+        &:disabled{
+            background-color: lighten(v.$negro, 60%);
+            color: v.$negro;
+            cursor: not-allowed;
+        }
+
+        @include m.desktop{
+            max-width: 100%;
+        }
+    }
+}
