@@ -322,7 +322,8 @@ async function reservarCita(){
     datos.append('nombre', nombre);
     datos.append('fecha', fecha);
     datos.append('hora', hora);
-    datos.append('servicios', idServicios);
+    // datos.append('servicios', idServicios);
+    datos.append('servicios', idServicios.join(','));
 
     const url = `${location.origin}/api/citas`;
     
